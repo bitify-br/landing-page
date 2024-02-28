@@ -8,6 +8,13 @@ h1 {
   color: white;
 }
 
+h2 {
+	font-family: "Poppins", sans-serif;
+	font-weigth: 500;
+	color: white;
+
+}
+
 p {
   color: white;
 }
