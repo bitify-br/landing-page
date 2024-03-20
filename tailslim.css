@@ -450,7 +450,7 @@ body {
   width: 100%;
 }
 
-h1, h2, h3, p {
+h1, h2, h3, p, label {
   color: white;
 }
 
@@ -582,12 +582,24 @@ h1, h2, h3, p {
   margin-top: 0.5rem;
 }
 
+.mt-20 {
+  margin-top: 5rem;
+}
+
 .mt-36 {
   margin-top: 9rem;
 }
 
 .mt-4 {
   margin-top: 1rem;
+}
+
+.mt-40 {
+  margin-top: 10rem;
+}
+
+.mt-5 {
+  margin-top: 1.25rem;
 }
 
 .mt-6 {
@@ -658,6 +670,10 @@ h1, h2, h3, p {
   border-radius: 0.5rem;
 }
 
+.rounded-md {
+  border-radius: 0.375rem;
+}
+
 .border {
   border-width: 1px;
 }
@@ -675,9 +691,19 @@ h1, h2, h3, p {
   border-color: rgb(39 164 255 / var(--tw-border-opacity));
 }
 
+.border-gray-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(109 109 109 / var(--tw-border-opacity));
+}
+
 .border-gray-800 {
   --tw-border-opacity: 1;
   border-color: rgb(69 69 69 / var(--tw-border-opacity));
+}
+
+.border-white {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
 .bg-black {
@@ -691,6 +717,11 @@ h1, h2, h3, p {
 
 .p-2\.5 {
   padding: 0.625rem;
+}
+
+.px-16 {
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 
 .px-2 {
@@ -731,6 +762,11 @@ h1, h2, h3, p {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
 .py-6 {

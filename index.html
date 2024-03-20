@@ -28,7 +28,7 @@
             <p class="mt-2 text-center text-sm font-normal">
              Garanta uma presença online marcante com um investimento acessível e qualidade excepcional.
             </p>
-		        <button class="w-full mt-9">
+		        <button onclick="handleClickCreateWebsite()" class="w-full mt-9">
 		          <div class="flex flex-row px-4 py-3.5 border-2 rounded justify-between items-center" >
 		            <p class="font-bold text-lg">Construa seu site</p>
 		            <img class="w-6" src="assets/icons/arrow-right-box.svg" />
@@ -102,6 +102,60 @@
         </div>
       </section>
       <hr class="mt-12 divider">
+      <section class="px-6 mt-20">
+        <h1 class="font-bold text-3xl leading-snug text-center">
+          Transforme seu Potencial em Sucesso
+        </h1>
+        <p class="leading-snug text-center mt-4">
+          Preencha o formulário abaixo e dê o primeiro passo para levar sua empresa ao próximo nível com um website que converte visitantes em resultados!
+        </p>
+        <div class="mt-6 border border-gray-500 rounded-md py-5 px-6">
+          <form id="main-form">
+            <div class="flex flex-col">
+              <label for="name">Nome *</label>
+              <input class="rounded-md py-3.5 px-6 mt-2" type="text" name="name" id="name" placeholder="Digite seu nome completo" required />
+            </div>
+            <div class="flex flex-col mt-5">
+              <label for="email">Email *</label>
+              <input class="rounded-md py-3.5 px-6 mt-2" type="email" name="email" id="email" placeholder="Digite seu e-mail" required />
+            </div>
+            <div class="flex flex-col mt-5">
+              <label for="phone">Celular *</label>
+              <input class="rounded-md py-3.5 px-6 mt-2" type="text" name="phone" id="phone" placeholder="Digite seu número do whatsapp" required />
+            </div>
+            <div class="flex flex-col mt-5">
+              <label for="company">Sua empresa *</label>
+              <input class="rounded-md py-3.5 px-6 mt-2" type="text" name="company" id="company" placeholder="Digite o nome da sua empresa" required />
+            </div>
+
+            <button class="border border-white rounded-md w-full py-3.5 px-16 mt-8" type="submit">
+            <p class="text-center text-lg">Envie mensagem</p>
+          </button>
+          </form>
+        </div>
+      </section>
+      <hr class="mt-40 divider">
     </main>
   </body>
+  <script>
+    const form = document.getElementById('main-form');
+    form.addEventListener("submit", (e) => {
+      console.log("Submiting form");
+      handleFormSubmit();
+    });
+
+    function handleFormSubmit() {
+      form.reset();
+      alert("Obrigado por submeter! Em breve um dos nossos acessores entrara em contato");
+    }
+    
+    function handleClickCreateWebsite() {
+      const formY = form.getBoundingClientRect().top + window.scrollY;
+
+      window.scroll({
+        top: formY,
+        behavior: 'smooth',
+      });
+    }
+  </script>
 </html>
