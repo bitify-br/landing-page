@@ -1,27 +1,16 @@
-body {
-  background-color: black;
-  width: 100%;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-h1 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  color: white;
-}
+@layer base {
+  body {
+    padding: 0;
+    background-color: black;
+    width: 100%;
+  }
 
-h2 {
-	font-family: "Poppins", sans-serif;
-	font-weigth: 500;
-	color: white;
-
-}
-
-p {
-  color: white;
-}
-
-.divider {
-  background: rgb(0,0,0);
-  background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(255,255,255,1) 50%, rgba(0,0,0,0) 100%);
+  h1, h2, h3, p {
+    color: white;
+  }
 }
 
