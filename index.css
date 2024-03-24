@@ -12,5 +12,9 @@
   h1, h2, h3, p, label {
     color: white;
   }
+
+  .divider {
+    border-image: radial-gradient(#ffffff, transparent);
+  }
 }
 
